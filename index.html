@@ -9,43 +9,33 @@
 body {
     background: linear-gradient(to right, lightgray, orange);
       
-    nav {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background-color: #333;
-        padding: 10px 20px;
-    }
+    .navbar {
+            margin-top: 5px;
+            width: 100            
+            padding: 5px 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: linear-gradient(to right, cyan, yellow);
+            border-radius: 24px;
+        }
 
-    nav ul {
-        display: flex;
-        gap: 20px;
-    }
+        .navbar a {
+            color: black;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 10px 15px;
+        }
 
-    nav ul li {
-        list-style: none;
-    }
-
-    nav ul li a {
-        color: white;
-        text-decoration: none;
-        padding: 5px 10px;
-    }
-
-    nav ul li a:hover {
-        background-color: #ef8472;
-        border-radius: 4px;
-    }
-
+        .navbar a:hover {
+            background: white;
+            border-radius: 24px;
+        }
     * {
         box-sizing: border-box;
     }
 
-    ul {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-    }
 
     section {
         padding: 20px;
@@ -53,7 +43,7 @@ body {
     }
 
     section h2 {
-        color: #ef8472;
+        color: #ef847;
         margin-bottom: 10px;
     }
 
@@ -62,14 +52,6 @@ body {
         line-height: 1.6;
     }
 
-    a {
-        color: #ef8472;
-        text-decoration: none;
-    }
-
-    a:hover {
-        text-decoration: underline;
-    }
 
     font-family: 'Helvetica Neue',
     Arial,
@@ -83,18 +65,27 @@ body {
     section#home {
 
         background-size: cover;
-        background: url('assests/FOODIES (1).png') no-repeat center center/cover;
+        background: transparent;
         color: white;
         text-align: center;
         padding: 100px 20px;
+        font-size: 22px;
+    }
+    
+    section#home h2 {
+        font-family: Copperplate, Papyrus, fantasy;
+    }
+    
+    section#home p {
+        font-family: Lorem ipsum dolor sit amet;
     }
 
     section#about,
     section#menu,
     section#contact {
         background-color: #fff;
-        border-radius: 8px;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        border-radius: 20px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 1);
     }
 
     section#about p,
@@ -126,8 +117,18 @@ body {
   <body>
     <header>
         <h1 class="foodies">Foodies!</h1>
-        
+        <nav class="navbar">
+        <a href="https://its-acromatic.github.io/foodies">Home</a>
+        <a href="https://its-acromatic.github.io/foodies/menu">Menu</a>
+        <a href="https://its-acromatic.github.io/foodies/about">About Us</a>
+        <a href="https://its-acromatic.github.io/foodies/contact">Contact</a>
+    </nav>
     </header>
+    
+     <section id="home">
+        <b><h2><h2 style="color: red">Delicious Food, Delivered To You</h2>
+        <b><p><p style="color: black">Experience the best food from the comfort of your home.</p>
+    </section>
       
   </body>
 </html>
